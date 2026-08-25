@@ -11,7 +11,7 @@ import {
 import { ImageWithFallback } from '@/components/ui/ImageWithFallback';
 import { Plus, Minus } from 'lucide-react';
 import { StatefulButton } from '@/components/ui/stateful-button';
-import { ReflectiveCard } from '@/components/ui/ReflectiveCard';
+
 import { cn } from '@/utils/cn';
 
 export interface ProductCardProps {
@@ -65,18 +65,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       : [];
 
   return (
-    <ReflectiveCard
-      blurStrength={10}
-      metalness={0.7}
-      roughness={0.3}
-      displacementStrength={18}
-      noiseScale={1.2}
-      specularConstant={1.5}
-      grayscale={0.35}
-      glassDistortion={8}
-      overlayColor="rgba(255, 255, 255, 0.65)"
+    <div
       className={cn(
-        'group flex flex-col justify-between transition-all duration-300',
+        'group flex flex-col justify-between transition-all duration-300 rounded-2xl overflow-hidden bg-white shadow-soft-sm border border-lavender-50',
         item.availability === 'out_of_stock' && 'opacity-75',
         className
       )}
@@ -219,7 +210,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </div>
         )}
       </div>
-    </ReflectiveCard>
+    </div>
   );
 };
 
