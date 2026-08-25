@@ -48,9 +48,9 @@ export const useSEO = ({ title, description, canonicalUrl }: SEOProps = {}) => {
         "@context": "https://schema.org",
         "@type": "Bakery",
         "name": appConfig.store.storeName,
-        "image": "https://patisserie22.com/images/patisserie-22-logo.jpg",
-        "@id": "https://patisserie22.com",
-        "url": "https://patisserie22.com",
+        "image": "https://patisserie-22.vercel.app/images/patisserie-22-logo.jpg",
+        "@id": "https://patisserie-22.vercel.app",
+        "url": "https://patisserie-22.vercel.app",
         "telephone": appConfig.store.phone,
         "address": {
           "@type": "PostalAddress",
