@@ -90,8 +90,26 @@ export default function Carousel({
   loop = false,
   round = false
 }: CarouselProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [currentWidth, setCurrentWidth] = useState(baseWidth);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const observer = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        // Use borderBoxSize for the total width including padding
+        const width = entry.borderBoxSize?.[0]?.inlineSize || entry.target.getBoundingClientRect().width;
+        if (width > 0) {
+          setCurrentWidth(width);
+        }
+      }
+    });
+    observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   const containerPadding = 16;
-  const itemWidth = baseWidth - containerPadding * 2;
+  const itemWidth = currentWidth - containerPadding * 2;
   const trackItemOffset = itemWidth + GAP;
   const itemsForRender = useMemo(() => {
     if (!loop) return items;
@@ -105,7 +123,7 @@ export default function Carousel({
   const [isJumping, setIsJumping] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const containerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     if (pauseOnHover && containerRef.current) {
       const container = containerRef.current;
