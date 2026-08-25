@@ -28,7 +28,7 @@ export const FestiveOccasionsPage: React.FC = () => {
       title: "Valentine's Day",
       description: 'Romantic berry entremets, heart-shaped macarons, and chocolate dipped strawberries.',
       season: 'February',
-      image: null,
+      image: '/images/festive/valentines-hamper.jpg',
     }
   ];
 
