@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="breadBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF5EE" />
+      <stop offset="100%" stop-color="#EAE4F2" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#breadBg)" />
+  <circle cx="200" cy="130" r="65" fill="#DDD4EC" opacity="0.6"/>
+  <!-- Bread Loaf Shape -->
+  <path d="M140 145 C 140 105, 260 105, 260 145 C 260 170, 140 170, 140 145 Z" fill="#7E69AB" />
+  <path d="M165 125 Q 175 140, 168 155" stroke="#FAF7F2" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M195 120 Q 205 138, 198 155" stroke="#FAF7F2" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M225 125 Q 235 140, 228 155" stroke="#FAF7F2" stroke-width="3" stroke-linecap="round" fill="none" />
+  <text x="200" y="225" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#6B5596" text-anchor="middle" letter-spacing="1">ARTISAN BREAD</text>
+  <text x="200" y="245" font-family="system-ui, sans-serif" font-size="11" fill="#8E7BB2" text-anchor="middle">Patisserie'22</text>
+</svg>

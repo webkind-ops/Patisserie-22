@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="teaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF5EE" />
+      <stop offset="100%" stop-color="#EAE4F2" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#teaBg)" />
+  <circle cx="200" cy="130" r="65" fill="#DDD4EC" opacity="0.6"/>
+  <!-- Teacup with Leaf -->
+  <path d="M165 125 L 225 125 L 220 160 C 220 170, 170 170, 170 160 Z" fill="#7E69AB" />
+  <path d="M225 132 C 238 132, 238 148, 222 148" stroke="#7E69AB" stroke-width="3.5" fill="none" />
+  <path d="M155 172 L 235 172" stroke="#6B5596" stroke-width="3" stroke-linecap="round" />
+  <!-- Tea Leaf -->
+  <path d="M195 105 C 190 95, 205 92, 205 92 C 205 92, 208 105, 195 105 Z" fill="#574281" />
+  <text x="200" y="225" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#6B5596" text-anchor="middle" letter-spacing="1">FINE INFUSIONS</text>
+  <text x="200" y="245" font-family="system-ui, sans-serif" font-size="11" fill="#8E7BB2" text-anchor="middle">Patisserie'22</text>
+</svg>

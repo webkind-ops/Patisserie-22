@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ==========================================================================
+     Lavender Theme Palette Tokens
+     ========================================================================== */
+  --color-primary-lavender: #7E69AB;
+  --color-soft-lavender: #EAE4F2;
+  --color-lavender-accent: #574281;
+  --color-lavender-deep: #3A2B56;
+  --color-lavender-50: #F7F5FB;
+  --color-lavender-100: #EFEBF6;
+  --color-lavender-200: #DDD4EC;
+  --color-lavender-300: #C2B2DC;
+  --color-lavender-400: #9F8AC4;
+  --color-lavender-600: #6B5596;
+  --color-lavender-900: #261B3B;
+
+  /* Neutral & Background Tokens */
+  --color-cream: #FFFDFB;
+  --color-cream-50: #FFFFFF;
+  --color-cream-200: #F7F2EC;
+  --color-off-white: #FFFFFF;
+  --color-dark-charcoal: #1E1B24;
+  --color-muted-gray: #6B6875;
+  --color-light-gray: #E4E0EB;
+
+  /* Surface & Border Tokens */
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #FFFFFF;
+  --color-surface-muted: #FBF9F7;
+  --color-border: #EFE9E4;
+
+  /* Shadow Colors (subtle warm lavender tint) */
+  --shadow-color-sm: rgba(67, 50, 103, 0.04);
+  --shadow-color-md: rgba(67, 50, 103, 0.07);
+  --shadow-color-lg: rgba(67, 50, 103, 0.12);
+
+  /* Dietary & Status Tokens */
+  --color-status-veg: #2E7D32;
+  --color-status-nonveg: #C62828;
+  --color-status-vegan: #00897B;
+  --color-status-eggless: #E65100;
+  --color-status-glutenfree: #6A1B9A;
+  --color-status-instock: #2E7D32;
+  --color-status-outofstock: #757575;
+  --color-status-limited: #D84315;
+}
+
+/* ==========================================================================
+   Base Layer & Typography Ergonomics
+   ========================================================================== */
+@layer base {
+  *, ::before, ::after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    background-color: #FAF7FC;
+    color: var(--color-dark-charcoal);
+  }
+
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    font-family: 'General Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.015em;
+    overflow-x: hidden;
+    background-color: #FAF7FC;
+    background-image: 
+      radial-gradient(circle at 18% 12%, rgba(216, 180, 254, 0.48), transparent 48%),
+      radial-gradient(circle at 88% 25%, rgba(233, 213, 255, 0.60), transparent 45%),
+      radial-gradient(circle at 50% 95%, rgba(254, 215, 170, 0.50), transparent 55%),
+      radial-gradient(circle at 85% 80%, rgba(216, 180, 254, 0.38), transparent 45%),
+      radial-gradient(circle at 12% 75%, rgba(255, 237, 213, 0.45), transparent 48%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-dark-charcoal);
+  }
+
+  #root {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: transparent;
+  }
+
+  /* Dramatic, elegant Instrument Serif headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.08;
+  }
+
+  /* Optimize touch target ergonomics */
+  button, a, input, select {
+    touch-action: manipulation;
+  }
+
+  /* Improve focus accessibility */
+  :focus-visible {
+    outline: 2px solid var(--color-primary-lavender);
+    outline-offset: 2px;
+  }
+}
+
+/* ==========================================================================
+   Utility Helpers
+   ========================================================================== */
+@layer utilities {
+  /* Hide scrollbar while preserving smooth momentum scroll */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Mobile momentum touch scrolling */
+  .touch-scroll {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+}

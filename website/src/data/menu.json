@@ -1,0 +1,1631 @@
+[
+  {
+    "id": "pas-001",
+    "name": "Old School Pineapple",
+    "category": "pastries",
+    "description": "Delicious old school pineapple freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/classic-pineapple-pastry.jpg",
+    "featured": false,
+    "price": 125
+  },
+  {
+    "id": "pas-002",
+    "name": "Belgian Chocolate",
+    "category": "pastries",
+    "description": "Delicious belgian chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/belgian-chocolate-pastry.jpg",
+    "featured": false,
+    "price": 220
+  },
+  {
+    "id": "pas-003",
+    "name": "Nutella Hazelnut Topped",
+    "category": "pastries",
+    "description": "Delicious nutella hazelnut topped freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/nutella-hazelnut-pastry.jpg",
+    "featured": false,
+    "price": 220
+  },
+  {
+    "id": "pas-004",
+    "name": "Lotus Biscoff Topped",
+    "category": "pastries",
+    "description": "Delicious lotus biscoff topped freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/lotus-biscoff-pastry.jpg",
+    "featured": false,
+    "price": 220
+  },
+  {
+    "id": "pas-005",
+    "name": "Raspberry Belgian",
+    "category": "pastries",
+    "description": "Delicious raspberry belgian freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/pastries.svg",
+    "featured": false,
+    "price": 270
+  },
+  {
+    "id": "cup-006",
+    "name": "Basic Vanilla",
+    "category": "cupcakes",
+    "description": "Delicious basic vanilla freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/basic-vanilla-cupcake.jpg",
+    "featured": false,
+    "price": 70
+  },
+  {
+    "id": "cup-007",
+    "name": "Strawberry/Blueberry",
+    "category": "cupcakes",
+    "description": "Delicious strawberry/blueberry freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/blueberry-cupcake.jpg",
+    "featured": false,
+    "price": 90
+  },
+  {
+    "id": "cup-008",
+    "name": "Lotus Biscoff",
+    "category": "cupcakes",
+    "description": "Delicious lotus biscoff freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/lotus-biscoff-cupcake.jpg",
+    "featured": false,
+    "price": 110
+  },
+  {
+    "id": "cup-009",
+    "name": "Belgian Chocolate",
+    "category": "cupcakes",
+    "description": "Delicious belgian chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes.svg",
+    "featured": false,
+    "price": 90
+  },
+  {
+    "id": "cup-010",
+    "name": "Strawberry Chocolate",
+    "category": "cupcakes",
+    "description": "Delicious strawberry chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes.svg",
+    "featured": false,
+    "price": 100
+  },
+  {
+    "id": "cup-011",
+    "name": "Nutella Hazelnut",
+    "category": "cupcakes",
+    "description": "Delicious nutella hazelnut freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes.svg",
+    "featured": false,
+    "price": 110
+  },
+  {
+    "id": "cup-012",
+    "name": "Christmas Cupcakes",
+    "category": "cupcakes",
+    "description": "Delicious christmas cupcakes freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes.svg",
+    "featured": false,
+    "price": 125
+  },
+  {
+    "id": "cup-013",
+    "name": "Vanilla Raspberry",
+    "category": "cupcakes",
+    "description": "Delicious vanilla raspberry freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes.svg",
+    "featured": false,
+    "price": 125
+  },
+  {
+    "id": "che-014",
+    "name": "Newyork Style",
+    "category": "cheesecakes-jar",
+    "description": "Delicious newyork style freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cheesecakes-jar.svg",
+    "featured": false,
+    "price": 220
+  },
+  {
+    "id": "che-015",
+    "name": "Blueberry",
+    "category": "cheesecakes-jar",
+    "description": "Delicious blueberry freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/blueberry-cheesecake-jar.jpg",
+    "featured": false,
+    "price": 240
+  },
+  {
+    "id": "che-016",
+    "name": "Strawberry",
+    "category": "cheesecakes-jar",
+    "description": "Delicious strawberry freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cheesecakes-jar.svg",
+    "featured": false,
+    "price": 240
+  },
+  {
+    "id": "che-017",
+    "name": "Lotus Biscoff",
+    "category": "cheesecakes-jar",
+    "description": "Delicious lotus biscoff freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cheesecakes-jar.svg",
+    "featured": false,
+    "price": 270
+  },
+  {
+    "id": "che-018",
+    "name": "Nutella Hazelnut",
+    "category": "cheesecakes-jar",
+    "description": "Delicious nutella hazelnut freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cheesecakes-jar.svg",
+    "featured": false,
+    "price": 270
+  },
+  {
+    "id": "che-019",
+    "name": "Brownie Fudge",
+    "category": "cheesecakes-jar",
+    "description": "Delicious brownie fudge freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/brownie-fudge-cheesecake-jar.jpg",
+    "featured": false,
+    "price": 300
+  },
+  {
+    "id": "che-020",
+    "name": "Raspberry",
+    "category": "cheesecakes-jar",
+    "description": "Delicious raspberry freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cheesecakes-jar.svg",
+    "featured": false,
+    "price": 300
+  },
+  {
+    "id": "ben-021",
+    "name": "Vanilla Chocochip Bento",
+    "category": "bento-cakes",
+    "description": "Delicious vanilla chocochip bento freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/bento-cakes.svg",
+    "featured": false,
+    "price": 300
+  },
+  {
+    "id": "ben-022",
+    "name": "Classic Pineapple",
+    "category": "bento-cakes",
+    "description": "Delicious classic pineapple freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/white-frosted-bento-cake.jpg",
+    "featured": false,
+    "price": 350
+  },
+  {
+    "id": "ben-023",
+    "name": "Strawberry Topped",
+    "category": "bento-cakes",
+    "description": "Delicious strawberry topped freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/bento-cakes.svg",
+    "featured": false,
+    "price": 330
+  },
+  {
+    "id": "ben-024",
+    "name": "Lotus Biscoff Topped",
+    "category": "bento-cakes",
+    "description": "Delicious lotus biscoff topped freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/bento-cakes.svg",
+    "featured": false,
+    "price": 330
+  },
+  {
+    "id": "ben-025",
+    "name": "Signature Belgian Chocolate",
+    "category": "bento-cakes",
+    "description": "Delicious signature belgian chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/chocolate-bento-cake.jpg",
+    "featured": false,
+    "price": 440
+  },
+  {
+    "id": "des-026",
+    "name": "Italian Tiramisu",
+    "category": "desserts",
+    "description": "Delicious italian tiramisu freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/desserts.svg",
+    "featured": false,
+    "price": 290
+  },
+  {
+    "id": "des-027",
+    "name": "Belgian Mousse Tub",
+    "category": "desserts",
+    "description": "Delicious belgian mousse tub freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/desserts.svg",
+    "featured": false,
+    "price": 170
+  },
+  {
+    "id": "des-028",
+    "name": "Lotus Biscoff Tub",
+    "category": "desserts",
+    "description": "Delicious lotus biscoff tub freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/lotus-biscoff-tub.jpg",
+    "featured": false,
+    "price": 190
+  },
+  {
+    "id": "des-029",
+    "name": "Tres Leches",
+    "category": "desserts",
+    "description": "Delicious tres leches freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/desserts.svg",
+    "featured": false,
+    "price": 220
+  },
+  {
+    "id": "des-030",
+    "name": "Donuts",
+    "category": "desserts",
+    "description": "Delicious donuts freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/desserts.svg",
+    "featured": false,
+    "price": 125
+  },
+  {
+    "id": "des-031",
+    "name": "Hot Brownie Ice Cream",
+    "category": "desserts",
+    "description": "Delicious hot brownie ice cream freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/desserts.svg",
+    "featured": false,
+    "price": 190
+  },
+  {
+    "id": "bro-032",
+    "name": "Classic Belgian",
+    "category": "brownies",
+    "description": "Delicious classic belgian freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/brownies.svg",
+    "featured": false,
+    "price": 145
+  },
+  {
+    "id": "bro-033",
+    "name": "Nutella Brownie",
+    "category": "brownies",
+    "description": "Delicious nutella brownie freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/brownies.svg",
+    "featured": false,
+    "price": 175
+  },
+  {
+    "id": "bro-034",
+    "name": "Lotus Biscoff",
+    "category": "brownies",
+    "description": "Delicious lotus biscoff freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/lotus-biscoff-brownie.jpg",
+    "featured": false,
+    "price": 175
+  },
+  {
+    "id": "bro-035",
+    "name": "Strawberry",
+    "category": "brownies",
+    "description": "Delicious strawberry freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/brownies.svg",
+    "featured": false,
+    "price": 160
+  },
+  {
+    "id": "bro-036",
+    "name": "Double Chocolate",
+    "category": "brownies",
+    "description": "Delicious double chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/brownies.svg",
+    "featured": false,
+    "price": 160
+  },
+  {
+    "id": "muf-037",
+    "name": "Vanilla Tutty Fruity",
+    "category": "muffins",
+    "description": "Delicious vanilla tutty fruity freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/muffins.svg",
+    "featured": false,
+    "price": 50
+  },
+  {
+    "id": "muf-038",
+    "name": "Chocolate Chocochip",
+    "category": "muffins",
+    "description": "Delicious chocolate chocochip freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/muffins.svg",
+    "featured": false,
+    "price": 60
+  },
+  {
+    "id": "muf-039",
+    "name": "Wholewheat Jaggery",
+    "category": "muffins",
+    "description": "Delicious wholewheat jaggery freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/muffins.svg",
+    "featured": false,
+    "price": 90
+  },
+  {
+    "id": "muf-040",
+    "name": "Christmas Plumcake",
+    "category": "muffins",
+    "description": "Delicious christmas plumcake freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/muffins.svg",
+    "featured": false,
+    "price": 99
+  },
+  {
+    "id": "dri-041",
+    "name": "Hot Coffee",
+    "category": "drinks",
+    "description": "Delicious hot coffee freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/drinks.svg",
+    "featured": false,
+    "price": 80
+  },
+  {
+    "id": "dri-042",
+    "name": "Classic Cold Coffee",
+    "category": "drinks",
+    "description": "Delicious classic cold coffee freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/drinks.svg",
+    "featured": false,
+    "price": 125
+  },
+  {
+    "id": "dri-043",
+    "name": "Belgian Brownie Shake",
+    "category": "drinks",
+    "description": "Delicious belgian brownie shake freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/drinks.svg",
+    "featured": false,
+    "price": 190
+  },
+  {
+    "id": "dri-044",
+    "name": "Belgian Hot Chocolate with Brownie",
+    "category": "drinks",
+    "description": "Delicious belgian hot chocolate with brownie freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/drinks.svg",
+    "featured": false,
+    "price": 150
+  },
+  {
+    "id": "cak-045",
+    "name": "Basic Vanilla",
+    "category": "cakes",
+    "description": "Delicious basic vanilla freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cakes.svg",
+    "featured": false,
+    "price": 495,
+    "variants": [
+      {
+        "id": "cak-045-v1",
+        "name": "1/2 Kg",
+        "price": 495
+      },
+      {
+        "id": "cak-045-v2",
+        "name": "1 Kg",
+        "price": 950
+      }
+    ]
+  },
+  {
+    "id": "cak-046",
+    "name": "Butterscotch Noga",
+    "category": "cakes",
+    "description": "Delicious butterscotch noga freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cakes.svg",
+    "featured": false,
+    "price": 625,
+    "variants": [
+      {
+        "id": "cak-046-v1",
+        "name": "1/2 Kg",
+        "price": 625
+      },
+      {
+        "id": "cak-046-v2",
+        "name": "1 Kg",
+        "price": 1175
+      }
+    ]
+  },
+  {
+    "id": "cak-047",
+    "name": "Black Forest",
+    "category": "cakes",
+    "description": "Delicious black forest freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cakes.svg",
+    "featured": false,
+    "price": 645,
+    "variants": [
+      {
+        "id": "cak-047-v1",
+        "name": "1/2 Kg",
+        "price": 645
+      },
+      {
+        "id": "cak-047-v2",
+        "name": "1 Kg",
+        "price": 1195
+      }
+    ]
+  },
+  {
+    "id": "cak-048",
+    "name": "White Forest",
+    "category": "cakes",
+    "description": "Delicious white forest freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cakes.svg",
+    "featured": false,
+    "price": 695,
+    "variants": [
+      {
+        "id": "cak-048-v1",
+        "name": "1/2 Kg",
+        "price": 695
+      },
+      {
+        "id": "cak-048-v2",
+        "name": "1 Kg",
+        "price": 1295
+      }
+    ]
+  },
+  {
+    "id": "cak-049",
+    "name": "Choco Delight",
+    "category": "cakes",
+    "description": "Delicious choco delight freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cakes.svg",
+    "featured": false,
+    "price": 695,
+    "variants": [
+      {
+        "id": "cak-049-v1",
+        "name": "1/2 Kg",
+        "price": 695
+      },
+      {
+        "id": "cak-049-v2",
+        "name": "1 Kg",
+        "price": 1295
+      }
+    ]
+  },
+  {
+    "id": "cak-050",
+    "name": "Truffle",
+    "category": "cakes",
+    "description": "Delicious truffle freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cakes.svg",
+    "featured": false,
+    "price": 745,
+    "variants": [
+      {
+        "id": "cak-050-v1",
+        "name": "1/2 Kg",
+        "price": 745
+      },
+      {
+        "id": "cak-050-v2",
+        "name": "1 Kg",
+        "price": 1375
+      }
+    ]
+  },
+  {
+    "id": "cak-051",
+    "name": "Dry Fruit",
+    "category": "cakes",
+    "description": "Delicious dry fruit freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cakes.svg",
+    "featured": false,
+    "price": 745,
+    "variants": [
+      {
+        "id": "cak-051-v1",
+        "name": "1/2 Kg",
+        "price": 745
+      },
+      {
+        "id": "cak-051-v2",
+        "name": "1 Kg",
+        "price": 1395
+      }
+    ]
+  },
+  {
+    "id": "cak-052",
+    "name": "Milk Chocolate",
+    "category": "cakes",
+    "description": "Delicious milk chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cakes.svg",
+    "featured": false,
+    "price": 745,
+    "variants": [
+      {
+        "id": "cak-052-v1",
+        "name": "1/2 Kg",
+        "price": 745
+      },
+      {
+        "id": "cak-052-v2",
+        "name": "1 Kg",
+        "price": 1395
+      }
+    ]
+  },
+  {
+    "id": "cak-053",
+    "name": "Belgian Chocolate",
+    "category": "cakes",
+    "description": "Delicious belgian chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cakes.svg",
+    "featured": false,
+    "price": 790,
+    "variants": [
+      {
+        "id": "cak-053-v1",
+        "name": "1/2 Kg",
+        "price": 790
+      },
+      {
+        "id": "cak-053-v2",
+        "name": "1 Kg",
+        "price": 1450
+      }
+    ]
+  },
+  {
+    "id": "cak-054",
+    "name": "Red Velvet",
+    "category": "cakes",
+    "description": "Delicious red velvet freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cakes.svg",
+    "featured": false,
+    "price": 845,
+    "variants": [
+      {
+        "id": "cak-054-v1",
+        "name": "1/2 Kg",
+        "price": 845
+      },
+      {
+        "id": "cak-054-v2",
+        "name": "1 Kg",
+        "price": 1495
+      }
+    ]
+  },
+  {
+    "id": "cak-055",
+    "name": "Kitkat",
+    "category": "cakes",
+    "description": "Delicious kitkat freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cakes.svg",
+    "featured": false,
+    "price": 0,
+    "variants": [
+      {
+        "id": "cak-055-v2",
+        "name": "1 Kg",
+        "price": 1495
+      }
+    ]
+  },
+  {
+    "id": "fru-056",
+    "name": "Pineapple Cake",
+    "category": "fruit-cakes",
+    "description": "Delicious pineapple cake freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/fruit-cakes.svg",
+    "featured": false,
+    "price": 625,
+    "variants": [
+      {
+        "id": "fru-056-v1",
+        "name": "1/2 Kg",
+        "price": 625
+      },
+      {
+        "id": "fru-056-v2",
+        "name": "1 Kg",
+        "price": 1150
+      }
+    ]
+  },
+  {
+    "id": "fru-057",
+    "name": "Strawberry Cake",
+    "category": "fruit-cakes",
+    "description": "Delicious strawberry cake freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/fruit-cakes.svg",
+    "featured": false,
+    "price": 675,
+    "variants": [
+      {
+        "id": "fru-057-v1",
+        "name": "1/2 Kg",
+        "price": 675
+      },
+      {
+        "id": "fru-057-v2",
+        "name": "1 Kg",
+        "price": 1195
+      }
+    ]
+  },
+  {
+    "id": "fru-058",
+    "name": "Cherry Cake",
+    "category": "fruit-cakes",
+    "description": "Delicious cherry cake freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/fruit-cakes.svg",
+    "featured": false,
+    "price": 675,
+    "variants": [
+      {
+        "id": "fru-058-v1",
+        "name": "1/2 Kg",
+        "price": 675
+      },
+      {
+        "id": "fru-058-v2",
+        "name": "1 Kg",
+        "price": 1195
+      }
+    ]
+  },
+  {
+    "id": "fru-059",
+    "name": "Blueberry Cake",
+    "category": "fruit-cakes",
+    "description": "Delicious blueberry cake freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/fruit-cakes.svg",
+    "featured": false,
+    "price": 675,
+    "variants": [
+      {
+        "id": "fru-059-v1",
+        "name": "1/2 Kg",
+        "price": 675
+      },
+      {
+        "id": "fru-059-v2",
+        "name": "1 Kg",
+        "price": 1195
+      }
+    ]
+  },
+  {
+    "id": "fru-060",
+    "name": "Mango Cake",
+    "category": "fruit-cakes",
+    "description": "Delicious mango cake freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/fruit-cakes.svg",
+    "featured": false,
+    "price": 675,
+    "variants": [
+      {
+        "id": "fru-060-v1",
+        "name": "1/2 Kg",
+        "price": 675
+      },
+      {
+        "id": "fru-060-v2",
+        "name": "1 Kg",
+        "price": 1195
+      }
+    ]
+  },
+  {
+    "id": "fru-061",
+    "name": "Mix Fruit Cake",
+    "category": "fruit-cakes",
+    "description": "Delicious mix fruit cake freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/fruit-cakes.svg",
+    "featured": false,
+    "price": 745,
+    "variants": [
+      {
+        "id": "fru-061-v1",
+        "name": "1/2 Kg",
+        "price": 745
+      },
+      {
+        "id": "fru-061-v2",
+        "name": "1 Kg",
+        "price": 1395
+      }
+    ]
+  },
+  {
+    "id": "pre-062",
+    "name": "Nutella Chocolate",
+    "category": "premium-cakes",
+    "description": "Delicious nutella chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/premium-cakes.svg",
+    "featured": false,
+    "price": 845,
+    "variants": [
+      {
+        "id": "pre-062-v1",
+        "name": "1/2 Kg",
+        "price": 845
+      },
+      {
+        "id": "pre-062-v2",
+        "name": "1 Kg",
+        "price": 1550
+      }
+    ]
+  },
+  {
+    "id": "pre-063",
+    "name": "Ferrero Rocher",
+    "category": "premium-cakes",
+    "description": "Delicious ferrero rocher freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/premium-cakes.svg",
+    "featured": false,
+    "price": 925,
+    "variants": [
+      {
+        "id": "pre-063-v1",
+        "name": "1/2 Kg",
+        "price": 925
+      },
+      {
+        "id": "pre-063-v2",
+        "name": "1 Kg",
+        "price": 1695
+      }
+    ]
+  },
+  {
+    "id": "pre-064",
+    "name": "Brownie Cake",
+    "category": "premium-cakes",
+    "description": "Delicious brownie cake freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/premium-cakes.svg",
+    "featured": false,
+    "price": 745,
+    "variants": [
+      {
+        "id": "pre-064-v1",
+        "name": "1/2 Kg",
+        "price": 745
+      },
+      {
+        "id": "pre-064-v2",
+        "name": "1 Kg",
+        "price": 1375
+      }
+    ]
+  },
+  {
+    "id": "pre-065",
+    "name": "Biscoff Cake",
+    "category": "premium-cakes",
+    "description": "Delicious biscoff cake freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/premium-cakes.svg",
+    "featured": false,
+    "price": 875,
+    "variants": [
+      {
+        "id": "pre-065-v1",
+        "name": "1/2 Kg",
+        "price": 875
+      },
+      {
+        "id": "pre-065-v2",
+        "name": "1 Kg",
+        "price": 1595
+      }
+    ]
+  },
+  {
+    "id": "pre-066",
+    "name": "Tiramisu",
+    "category": "premium-cakes",
+    "description": "Delicious tiramisu freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/premium-cakes.svg",
+    "featured": false,
+    "price": 795,
+    "variants": [
+      {
+        "id": "pre-066-v1",
+        "name": "1/2 Kg",
+        "price": 795
+      },
+      {
+        "id": "pre-066-v2",
+        "name": "1 Kg",
+        "price": 1450
+      }
+    ]
+  },
+  {
+    "id": "cup-067",
+    "name": "Basic Vanilla",
+    "category": "cupcakes-box",
+    "description": "Delicious basic vanilla freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes-box.svg",
+    "featured": false,
+    "price": 295,
+    "variants": [
+      {
+        "id": "cup-067-v1",
+        "name": "Box of 4",
+        "price": 295
+      },
+      {
+        "id": "cup-067-v2",
+        "name": "Box of 6",
+        "price": 395
+      }
+    ]
+  },
+  {
+    "id": "cup-068",
+    "name": "Double Chocolate",
+    "category": "cupcakes-box",
+    "description": "Delicious double chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes-box.svg",
+    "featured": false,
+    "price": 345,
+    "variants": [
+      {
+        "id": "cup-068-v1",
+        "name": "Box of 4",
+        "price": 345
+      },
+      {
+        "id": "cup-068-v2",
+        "name": "Box of 6",
+        "price": 545
+      }
+    ]
+  },
+  {
+    "id": "cup-069",
+    "name": "Fruit Flavours",
+    "category": "cupcakes-box",
+    "description": "Delicious fruit flavours freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes-box.svg",
+    "featured": false,
+    "price": 375,
+    "variants": [
+      {
+        "id": "cup-069-v1",
+        "name": "Box of 4",
+        "price": 375
+      },
+      {
+        "id": "cup-069-v2",
+        "name": "Box of 6",
+        "price": 545
+      }
+    ]
+  },
+  {
+    "id": "cup-070",
+    "name": "Salted Caramel",
+    "category": "cupcakes-box",
+    "description": "Delicious salted caramel freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes-box.svg",
+    "featured": false,
+    "price": 375,
+    "variants": [
+      {
+        "id": "cup-070-v1",
+        "name": "Box of 4",
+        "price": 375
+      },
+      {
+        "id": "cup-070-v2",
+        "name": "Box of 6",
+        "price": 595
+      }
+    ]
+  },
+  {
+    "id": "cup-071",
+    "name": "Mocha Chocolate",
+    "category": "cupcakes-box",
+    "description": "Delicious mocha chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes-box.svg",
+    "featured": false,
+    "price": 425,
+    "variants": [
+      {
+        "id": "cup-071-v1",
+        "name": "Box of 4",
+        "price": 425
+      },
+      {
+        "id": "cup-071-v2",
+        "name": "Box of 6",
+        "price": 625
+      }
+    ]
+  },
+  {
+    "id": "cup-072",
+    "name": "Red Velvet",
+    "category": "cupcakes-box",
+    "description": "Delicious red velvet freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes-box.svg",
+    "featured": false,
+    "price": 425,
+    "variants": [
+      {
+        "id": "cup-072-v1",
+        "name": "Box of 4",
+        "price": 425
+      },
+      {
+        "id": "cup-072-v2",
+        "name": "Box of 6",
+        "price": 625
+      }
+    ]
+  },
+  {
+    "id": "cup-073",
+    "name": "Milk Chocolate",
+    "category": "cupcakes-box",
+    "description": "Delicious milk chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes-box.svg",
+    "featured": false,
+    "price": 475,
+    "variants": [
+      {
+        "id": "cup-073-v1",
+        "name": "Box of 4",
+        "price": 475
+      },
+      {
+        "id": "cup-073-v2",
+        "name": "Box of 6",
+        "price": 645
+      }
+    ]
+  },
+  {
+    "id": "cup-074",
+    "name": "Nutella Hazelnut",
+    "category": "cupcakes-box",
+    "description": "Delicious nutella hazelnut freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes-box.svg",
+    "featured": false,
+    "price": 545,
+    "variants": [
+      {
+        "id": "cup-074-v1",
+        "name": "Box of 4",
+        "price": 545
+      },
+      {
+        "id": "cup-074-v2",
+        "name": "Box of 6",
+        "price": 725
+      }
+    ]
+  },
+  {
+    "id": "cup-075",
+    "name": "Belgian Chocolate",
+    "category": "cupcakes-box",
+    "description": "Delicious belgian chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes-box.svg",
+    "featured": false,
+    "price": 576,
+    "variants": [
+      {
+        "id": "cup-075-v1",
+        "name": "Box of 4",
+        "price": 576
+      },
+      {
+        "id": "cup-075-v2",
+        "name": "Box of 6",
+        "price": 745
+      }
+    ]
+  },
+  {
+    "id": "cup-076",
+    "name": "Biscoff",
+    "category": "cupcakes-box",
+    "description": "Delicious biscoff freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes-box.svg",
+    "featured": false,
+    "price": 646,
+    "variants": [
+      {
+        "id": "cup-076-v1",
+        "name": "Box of 4",
+        "price": 646
+      },
+      {
+        "id": "cup-076-v2",
+        "name": "Box of 6",
+        "price": 845
+      }
+    ]
+  },
+  {
+    "id": "cup-077",
+    "name": "Assorted Box",
+    "category": "cupcakes-box",
+    "description": "Delicious assorted box freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cupcakes-box.svg",
+    "featured": false,
+    "price": 445,
+    "variants": [
+      {
+        "id": "cup-077-v1",
+        "name": "Box of 4",
+        "price": 445
+      },
+      {
+        "id": "cup-077-v2",
+        "name": "Box of 6",
+        "price": 595
+      }
+    ]
+  },
+  {
+    "id": "bro-078",
+    "name": "Plain Brownie",
+    "category": "brownies-box",
+    "description": "Delicious plain brownie freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/brownies-box.svg",
+    "featured": false,
+    "price": 440,
+    "variants": [
+      {
+        "id": "bro-078-v1",
+        "name": "Box of 4",
+        "price": 440
+      },
+      {
+        "id": "bro-078-v2",
+        "name": "Box of 6",
+        "price": 645
+      }
+    ]
+  },
+  {
+    "id": "bro-079",
+    "name": "Walnut Brownie",
+    "category": "brownies-box",
+    "description": "Delicious walnut brownie freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/classic-walnut-brownie.jpg",
+    "featured": false,
+    "price": 525,
+    "variants": [
+      {
+        "id": "bro-079-v1",
+        "name": "Box of 4",
+        "price": 525
+      },
+      {
+        "id": "bro-079-v2",
+        "name": "Box of 6",
+        "price": 725
+      }
+    ]
+  },
+  {
+    "id": "bro-080",
+    "name": "Chocochip Brownie",
+    "category": "brownies-box",
+    "description": "Delicious chocochip brownie freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/brownies-box.svg",
+    "featured": false,
+    "price": 525,
+    "variants": [
+      {
+        "id": "bro-080-v1",
+        "name": "Box of 4",
+        "price": 525
+      },
+      {
+        "id": "bro-080-v2",
+        "name": "Box of 6",
+        "price": 725
+      }
+    ]
+  },
+  {
+    "id": "bro-081",
+    "name": "Oreo Brownie",
+    "category": "brownies-box",
+    "description": "Delicious oreo brownie freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/brownies-box.svg",
+    "featured": false,
+    "price": 595,
+    "variants": [
+      {
+        "id": "bro-081-v1",
+        "name": "Box of 4",
+        "price": 595
+      },
+      {
+        "id": "bro-081-v2",
+        "name": "Box of 6",
+        "price": 795
+      }
+    ]
+  },
+  {
+    "id": "bro-082",
+    "name": "Double Chocolate",
+    "category": "brownies-box",
+    "description": "Delicious double chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/brownies-box.svg",
+    "featured": false,
+    "price": 595,
+    "variants": [
+      {
+        "id": "bro-082-v1",
+        "name": "Box of 4",
+        "price": 595
+      },
+      {
+        "id": "bro-082-v2",
+        "name": "Box of 6",
+        "price": 795
+      }
+    ]
+  },
+  {
+    "id": "bro-083",
+    "name": "Milk Chocolate",
+    "category": "brownies-box",
+    "description": "Delicious milk chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/brownies-box.svg",
+    "featured": false,
+    "price": 645,
+    "variants": [
+      {
+        "id": "bro-083-v1",
+        "name": "Box of 4",
+        "price": 645
+      },
+      {
+        "id": "bro-083-v2",
+        "name": "Box of 6",
+        "price": 845
+      }
+    ]
+  },
+  {
+    "id": "bro-084",
+    "name": "Nutella",
+    "category": "brownies-box",
+    "description": "Delicious nutella freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/brownies-box.svg",
+    "featured": false,
+    "price": 675,
+    "variants": [
+      {
+        "id": "bro-084-v1",
+        "name": "Box of 4",
+        "price": 675
+      },
+      {
+        "id": "bro-084-v2",
+        "name": "Box of 6",
+        "price": 895
+      }
+    ]
+  },
+  {
+    "id": "bro-085",
+    "name": "Belgian Chocolate",
+    "category": "brownies-box",
+    "description": "Delicious belgian chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/brownies-box.svg",
+    "featured": false,
+    "price": 745,
+    "variants": [
+      {
+        "id": "bro-085-v1",
+        "name": "Box of 4",
+        "price": 745
+      },
+      {
+        "id": "bro-085-v2",
+        "name": "Box of 6",
+        "price": 945
+      }
+    ]
+  },
+  {
+    "id": "bro-086",
+    "name": "Biscoff",
+    "category": "brownies-box",
+    "description": "Delicious biscoff freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/brownies-box.svg",
+    "featured": false,
+    "price": 745,
+    "variants": [
+      {
+        "id": "bro-086-v1",
+        "name": "Box of 4",
+        "price": 745
+      },
+      {
+        "id": "bro-086-v2",
+        "name": "Box of 6",
+        "price": 945
+      }
+    ]
+  },
+  {
+    "id": "bro-087",
+    "name": "Assorted Box",
+    "category": "brownies-box",
+    "description": "Delicious assorted box freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/box-of-8-assorted-brownies.jpg",
+    "featured": false,
+    "price": 475,
+    "variants": [
+      {
+        "id": "bro-087-v1",
+        "name": "Box of 4",
+        "price": 475
+      },
+      {
+        "id": "bro-087-v2",
+        "name": "Box of 6",
+        "price": 595
+      }
+    ]
+  },
+  {
+    "id": "che-088",
+    "name": "New York",
+    "category": "cheesecakes-baked",
+    "description": "Delicious new york freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cheesecakes-baked.svg",
+    "featured": false,
+    "price": 895,
+    "variants": [
+      {
+        "id": "che-088-v1",
+        "name": "1/2 Kg",
+        "price": 895
+      },
+      {
+        "id": "che-088-v2",
+        "name": "1 Kg",
+        "price": 1495
+      }
+    ]
+  },
+  {
+    "id": "che-089",
+    "name": "Blueberry",
+    "category": "cheesecakes-baked",
+    "description": "Delicious blueberry freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cheesecakes-baked.svg",
+    "featured": false,
+    "price": 945,
+    "variants": [
+      {
+        "id": "che-089-v1",
+        "name": "1/2 Kg",
+        "price": 945
+      },
+      {
+        "id": "che-089-v2",
+        "name": "1 Kg",
+        "price": 1650
+      }
+    ]
+  },
+  {
+    "id": "che-090",
+    "name": "Strawberry",
+    "category": "cheesecakes-baked",
+    "description": "Delicious strawberry freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cheesecakes-baked.svg",
+    "featured": false,
+    "price": 945,
+    "variants": [
+      {
+        "id": "che-090-v1",
+        "name": "1/2 Kg",
+        "price": 945
+      },
+      {
+        "id": "che-090-v2",
+        "name": "1 Kg",
+        "price": 1650
+      }
+    ]
+  },
+  {
+    "id": "che-091",
+    "name": "Mango",
+    "category": "cheesecakes-baked",
+    "description": "Delicious mango freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cheesecakes-baked.svg",
+    "featured": false,
+    "price": 975,
+    "variants": [
+      {
+        "id": "che-091-v1",
+        "name": "1/2 Kg",
+        "price": 975
+      },
+      {
+        "id": "che-091-v2",
+        "name": "1 Kg",
+        "price": 1695
+      }
+    ]
+  },
+  {
+    "id": "che-092",
+    "name": "Chocolate",
+    "category": "cheesecakes-baked",
+    "description": "Delicious chocolate freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/images/chocolate-baked-cheesecake-jar.jpg",
+    "featured": false,
+    "price": 1050,
+    "variants": [
+      {
+        "id": "che-092-v1",
+        "name": "1/2 Kg",
+        "price": 1050
+      },
+      {
+        "id": "che-092-v2",
+        "name": "1 Kg",
+        "price": 1795
+      }
+    ]
+  },
+  {
+    "id": "che-093",
+    "name": "Nutella",
+    "category": "cheesecakes-baked",
+    "description": "Delicious nutella freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cheesecakes-baked.svg",
+    "featured": false,
+    "price": 1145,
+    "variants": [
+      {
+        "id": "che-093-v1",
+        "name": "1/2 Kg",
+        "price": 1145
+      },
+      {
+        "id": "che-093-v2",
+        "name": "1 Kg",
+        "price": 1845
+      }
+    ]
+  },
+  {
+    "id": "che-094",
+    "name": "Biscoff",
+    "category": "cheesecakes-baked",
+    "description": "Delicious biscoff freshly prepared.",
+    "dietary": "eggless",
+    "availability": "in_stock",
+    "image": "/placeholders/cheesecakes-baked.svg",
+    "featured": false,
+    "price": 1195,
+    "variants": [
+      {
+        "id": "che-094-v1",
+        "name": "1/2 Kg",
+        "price": 1195
+      },
+      {
+        "id": "che-094-v2",
+        "name": "1 Kg",
+        "price": 1895
+      }
+    ]
+  }
+]
