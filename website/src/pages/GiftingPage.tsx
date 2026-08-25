@@ -30,6 +30,7 @@ export const GiftingPage: React.FC = () => {
             { id: 7, title: 'Artisan Cookie Basket', desc: 'Choco chip cookies, fudgy brownies, butter cookies, and biscotti.', price: '₹1,400', img: '/images/hampers/hamper7.jpg' },
             { id: 8, title: 'Lavender Gift Set', desc: 'Butter cookies, almond cake, brownies, chocolate spread, and lavender candle.', price: '₹2,500', img: '/images/hampers/hamper8.jpg' },
             { id: 9, title: 'Bakery Wicker Hamper', desc: 'Sourdough loaf, artisan jam, Belgian chocolates, biscotti, and lemon drizzle cake.', price: '₹2,800', img: '/images/hampers/hamper9.jpg' },
+            { id: 10, title: "Baker's Favourites", desc: 'House blend granola, croissants, shortbread, raspberry jam, and clover honey.', price: '₹1,900', img: '/images/hampers/hamper10.jpg' },
           ].map((h) => (
             <div key={h.id} className="bg-white rounded-2xl overflow-hidden shadow-soft-sm border border-lavender-50 flex flex-col">
               <div className="w-full aspect-square overflow-hidden">

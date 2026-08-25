@@ -135,6 +135,7 @@ export const HomePage: React.FC = () => {
               { id: 'h7', title: 'Artisan Cookie Basket', description: 'Choco chip cookies, fudgy brownies, butter cookies, and biscotti.', image: '/images/hampers/hamper7.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
               { id: 'h8', title: 'Lavender Gift Set', description: 'Butter cookies, almond cake, brownies, chocolate spread, and lavender candle.', image: '/images/hampers/hamper8.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
               { id: 'h9', title: 'Bakery Wicker Hamper', description: 'Sourdough loaf, artisan jam, Belgian chocolates, biscotti, and lemon drizzle cake.', image: '/images/hampers/hamper9.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
+              { id: 'h10', title: "Baker's Favourites", description: 'House blend granola, croissants, shortbread, raspberry jam, and clover honey.', image: '/images/hampers/hamper10.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
             ]}
             baseWidth={320}
             autoplay={true}
