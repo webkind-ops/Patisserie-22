@@ -46,7 +46,7 @@ export const HomePage: React.FC = () => {
             className="w-full max-w-[320px] mx-auto -mt-4 mb-2"
             style={{ fontFamily: '"Playfair Display", serif' }}
           />
-          <p className="text-charcoal-muted mt-2 text-sm">Experience the ambiance</p>
+          <p className="text-charcoal-muted mt-2 text-sm">Experience the ambience</p>
         </div>
         <div className="w-full max-w-4xl mx-auto h-[400px] md:h-[500px] relative overflow-hidden rounded-[2rem] bg-lavender-50/50">
           <DepthCarousel
@@ -109,46 +109,47 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* GIFTING / HAMPERS SECTION */}
-      <section className="w-full mb-16 py-12 px-6 bg-lavender-50 rounded-3xl border border-lavender-100 flex flex-col items-center text-center mx-4" id="gifting">
-        <StrokeText
-          text="Premium Gifting"
-          fontSize={80}
-          strokeColor="#a78bfa"
-          fillColor="#1a1a1a"
-          strokeWidth={1.5}
-          className="w-full max-w-[420px] mx-auto -mt-4 mb-3"
-          style={{ fontFamily: '"Playfair Display", serif' }}
-        />
-        <p className="text-charcoal-muted max-w-2xl mx-auto mb-8 text-sm md:text-base">
-          Curated hampers and exclusive gift collections for every special occasion. 
-          Celebrate with our finest artisanal creations elegantly packaged for your loved ones.
-        </p>
-        <div className="w-full mx-auto mb-8 px-2 md:px-0 flex justify-center">
-          <Carousel
-            items={[
-              { id: 'h1', title: 'Lavender Bliss Box', description: 'Assorted cookies, almond cake, and a scented candle.', image: '/images/hampers/hamper1.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
-              { id: 'h2', title: 'Signature Collection', description: 'Lavender shortbread, meringue drops, and classic spread.', image: '/images/hampers/hamper2.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
-              { id: 'h3', title: 'Bakery Pantry Basket', description: 'Fresh bread, artisan jam, biscuits, and chocolates.', image: '/images/hampers/hamper3.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
-              { id: 'h4', title: 'Daily Crumb Hamper', description: 'House blend granola, croissants, shortbread, and jam.', image: '/images/hampers/hamper4.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
-              { id: 'h5', title: 'Chocolate Lovers Box', description: 'Butter cookies, hazelnut spread, brownies, and chocolate loaf cake.', image: '/images/hampers/hamper5.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
-              { id: 'h6', title: 'Patisserie 22 Classic', description: 'Lavender shortbread, meringue kisses, almond cake, and classic spread.', image: '/images/hampers/hamper6.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
-              { id: 'h7', title: 'Artisan Cookie Basket', description: 'Choco chip cookies, fudgy brownies, butter cookies, and biscotti.', image: '/images/hampers/hamper7.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
-              { id: 'h8', title: 'Lavender Gift Set', description: 'Butter cookies, almond cake, brownies, chocolate spread, and lavender candle.', image: '/images/hampers/hamper8.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
-              { id: 'h9', title: 'Bakery Wicker Hamper', description: 'Sourdough loaf, artisan jam, Belgian chocolates, biscotti, and lemon drizzle cake.', image: '/images/hampers/hamper9.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
-              { id: 'h10', title: "Baker's Favourites", description: 'House blend granola, croissants, shortbread, raspberry jam, and clover honey.', image: '/images/hampers/hamper10.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
-            ]}
-            baseWidth={320}
-            autoplay={true}
-            autoplayDelay={3500}
-            pauseOnHover={true}
-            loop={true}
-            round={false}
+      <div className="w-full mb-16 px-4">
+        <section className="w-full py-12 px-4 bg-lavender-50 rounded-3xl border border-lavender-100 flex flex-col items-center text-center overflow-hidden" id="gifting">
+          <StrokeText
+            text="Premium Gifting"
+            fontSize={80}
+            strokeColor="#a78bfa"
+            fillColor="#1a1a1a"
+            strokeWidth={1.5}
+            className="w-full max-w-[420px] mx-auto -mt-4 mb-3"
+            style={{ fontFamily: '"Playfair Display", serif' }}
           />
-        </div>
-        <Link to="/gifting" className="mt-2 text-lavender-700 font-medium hover:text-lavender-900 transition-colors underline underline-offset-4">
-          View All Gifting Options
-        </Link>
-      </section>
+          <p className="text-charcoal-muted max-w-2xl mx-auto mb-8 text-sm md:text-base">
+            Gift boxes and hampers for every occasion — birthdays, celebrations, and just-because moments.
+            Packed with love and our freshest bakes.
+          </p>
+          <div className="w-full mb-8">
+            <Carousel
+              items={[
+                { id: 'h1', title: 'Lavender Bliss Box', description: 'Assorted cookies, almond cake, and a scented candle.', image: '/images/hampers/hamper1.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
+                { id: 'h2', title: 'Signature Collection', description: 'Lavender shortbread, meringue drops, and classic spread.', image: '/images/hampers/hamper2.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
+                { id: 'h3', title: 'Bakery Pantry Basket', description: 'Fresh bread, artisan jam, biscuits, and chocolates.', image: '/images/hampers/hamper3.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
+                { id: 'h4', title: 'Daily Crumb Hamper', description: 'House blend granola, croissants, shortbread, and jam.', image: '/images/hampers/hamper4.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
+                { id: 'h5', title: 'Chocolate Lovers Box', description: 'Butter cookies, hazelnut spread, brownies, and chocolate loaf cake.', image: '/images/hampers/hamper5.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
+                { id: 'h6', title: 'Patisserie 22 Classic', description: 'Lavender shortbread, meringue kisses, almond cake, and classic spread.', image: '/images/hampers/hamper6.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
+                { id: 'h7', title: 'Artisan Cookie Basket', description: 'Choco chip cookies, fudgy brownies, butter cookies, and biscotti.', image: '/images/hampers/hamper7.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
+                { id: 'h8', title: 'Lavender Gift Set', description: 'Butter cookies, almond cake, brownies, chocolate spread, and lavender candle.', image: '/images/hampers/hamper8.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
+                { id: 'h9', title: 'Bakery Wicker Hamper', description: 'Sourdough loaf, artisan jam, Belgian chocolates, biscotti, and lemon drizzle cake.', image: '/images/hampers/hamper9.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
+                { id: 'h10', title: "Baker's Favourites", description: 'House blend granola, croissants, shortbread, raspberry jam, and clover honey.', image: '/images/hampers/hamper10.jpg', actionText: 'Enquire Now', onAction: () => window.open('https://wa.me/917011352004', '_blank') },
+              ]}
+              autoplay={true}
+              autoplayDelay={3500}
+              pauseOnHover={true}
+              loop={true}
+              round={false}
+            />
+          </div>
+          <Link to="/gifting" className="mt-2 text-lavender-700 font-medium hover:text-lavender-900 transition-colors underline underline-offset-4">
+            View All Gifting Options
+          </Link>
+        </section>
+      </div>
 
       {/* OUR STORY SECTION */}
       <section className="w-full mb-16 py-12 px-4 flex flex-col items-center text-center" id="story">
@@ -167,9 +168,9 @@ export const HomePage: React.FC = () => {
             Born from a passion for authentic baking, we set out on a journey to redefine the sweet experience.
           </p>
           <p>
-            As a 100% eggless bakery, our philosophy is simple: uncompromising quality, premium ingredients, and 
-            a whole lot of love. From our humble beginnings to our expanding range of artisanal breads, delicate viennoiserie, 
-            and premium gifting hampers, our commitment to excellence remains the same.
+            As a 100% eggless bakery, our philosophy is simple: good quality, real ingredients, and
+            a whole lot of love. From our humble beginnings to our growing range of artisanal breads, cakes,
+            and premium gifting hampers, our commitment to what we do remains the same.
           </p>
           <p>
             Join us in savoring life's sweetest moments, one bite at a time.

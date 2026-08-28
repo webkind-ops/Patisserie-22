@@ -37,7 +37,7 @@ export const appConfig: AppConfig = {
   // Store profile, official contact details, and location
   store: {
     storeName: "Patisserie'22",
-    tagline: 'Artisan Bakery & Fine Viennoiserie',
+    tagline: 'Artisan Bakery & Fresh Bakes Since 2022',
     openingHours: '11:00 AM – 10:00 PM',
     daysOpen: 'Tuesday to Sunday (Closed on Mondays)',
     whatsappNumber: '+917011352004',
