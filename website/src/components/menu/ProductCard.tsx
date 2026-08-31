@@ -192,21 +192,21 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             Add
           </StatefulButton>
         ) : (
-          <div className="flex items-center gap-1.5 bg-lavender-deep text-white p-1 rounded-full shadow-soft-sm">
+          <div className="flex items-center gap-2 bg-lavender-deep text-white p-1 rounded-full shadow-soft-sm">
             <button
               onClick={handleDecrement}
-              className="w-6 h-6 rounded-full bg-white/20 hover:bg-white/30 active:scale-90 flex items-center justify-center transition-all"
+              className="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 active:scale-90 flex items-center justify-center transition-all"
               aria-label="Decrease quantity"
             >
-              <Minus className="w-3 h-3 text-white" />
+              <Minus className="w-4 h-4 text-white" />
             </button>
-            <span className="w-5 text-center font-sans text-xs font-bold">{inCartQty}</span>
+            <span className="w-6 text-center font-sans text-sm font-bold">{inCartQty}</span>
             <button
               onClick={handleIncrement}
-              className="w-6 h-6 rounded-full bg-white/20 hover:bg-white/30 active:scale-90 flex items-center justify-center transition-all"
+              className="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 active:scale-90 flex items-center justify-center transition-all"
               aria-label="Increase quantity"
             >
-              <Plus className="w-3 h-3 text-white" />
+              <Plus className="w-4 h-4 text-white" />
             </button>
           </div>
         )}

@@ -38,6 +38,7 @@ export const HomePage: React.FC = () => {
       <section className="w-full mb-16 px-4 pt-10">
         <div className="mb-6 flex flex-col items-center text-center">
           <StrokeText
+            as="h1"
             text="Our Bakery"
             fontSize={90}
             strokeColor="#a78bfa"
@@ -75,6 +76,7 @@ export const HomePage: React.FC = () => {
       <section className="w-full mb-16 px-4" id="best-sellers">
         <div className="mb-6 flex flex-col items-center text-center">
           <StrokeText
+            as="h2"
             text="Best Sellers"
             fontSize={90}
             strokeColor="#a78bfa"
@@ -112,6 +114,7 @@ export const HomePage: React.FC = () => {
       <div className="w-full mb-16 px-4">
         <section className="w-full py-12 px-4 bg-lavender-50 rounded-3xl border border-lavender-100 flex flex-col items-center text-center overflow-hidden" id="gifting">
           <StrokeText
+            as="h2"
             text="Premium Gifting"
             fontSize={80}
             strokeColor="#a78bfa"
@@ -154,6 +157,7 @@ export const HomePage: React.FC = () => {
       {/* OUR STORY SECTION */}
       <section className="w-full mb-16 py-12 px-4 flex flex-col items-center text-center" id="story">
         <StrokeText
+          as="h2"
           text="Our Story"
           fontSize={90}
           strokeColor="#a78bfa"

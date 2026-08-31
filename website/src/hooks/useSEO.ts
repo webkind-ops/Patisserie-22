@@ -17,7 +17,7 @@ export const useSEO = ({ title, description, canonicalUrl, image }: SEOProps = {
     const defaultDescription = `Welcome to ${appConfig.store.storeName}. ${appConfig.store.tagline}. Order fresh cakes, pastries, and artisanal breads.`;
     const finalDescription = description || defaultDescription;
     const finalImage = image || `${appConfig.baseUrl}/images/patisserie-22-logo.jpg`;
-    
+
     // Using pathname for canonical building
     const currentPath = window.location.pathname;
     const finalCanonical = canonicalUrl || (currentPath === '/' ? appConfig.baseUrl : `${appConfig.baseUrl}${currentPath}`);
@@ -63,7 +63,7 @@ export const useSEO = ({ title, description, canonicalUrl, image }: SEOProps = {
       schemaScript = document.createElement('script');
       schemaScript.id = 'local-business-schema';
       schemaScript.setAttribute('type', 'application/ld+json');
-      
+
       const schemaData = {
         "@context": "https://schema.org",
         "@type": "Bakery",
@@ -81,8 +81,8 @@ export const useSEO = ({ title, description, canonicalUrl, image }: SEOProps = {
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "28.5355", // Placeholder: Client should provide actual coordinates
-          "longitude": "77.1558"
+          "latitude": "28.657486",
+          "longitude": "77.317099"
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",

@@ -27,6 +27,7 @@ export interface StrokeTextProps {
   reverse?: boolean;
   className?: string;
   style?: React.CSSProperties;
+  as?: 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'div';
 }
 
 export const StrokeText: React.FC<StrokeTextProps> = ({
@@ -38,16 +39,17 @@ export const StrokeText: React.FC<StrokeTextProps> = ({
   fillDelay = 0.2,
   stagger = 0.05,
   ease = 'power2.out',
-  trigger = 'scroll', // Changed default to 'scroll' for website headers
+  trigger = 'scroll',
   fillMode = 'wipe',
   fontSize = 128,
   fontWeight = 800,
   letterSpacing = -4,
   reverse = false,
   className = '',
-  style = {}
+  style = {},
+  as: Component = 'span'
 }) => {
-  const rootRef = useRef<HTMLSpanElement>(null);
+  const rootRef = useRef<any>(null);
   const strokeTextRef = useRef<SVGTextElement>(null);
   const wipeRectRef = useRef<SVGRectElement>(null);
 
@@ -216,12 +218,11 @@ export const StrokeText: React.FC<StrokeTextProps> = ({
   const viewBox = box ? `${box.x} ${box.y} ${box.width} ${box.height}` : `0 ${-fontSize} 600 ${fontSize * 1.3}`;
 
   return (
-    <span
+    <Component
       ref={rootRef}
       className={`stroke-text ${trigger === 'hover' ? 'stroke-text--hover' : ''} ${className}`.trim()}
       style={{ ...style, '--stroke-text-height': `${Math.round(fontSize * 1.3)}px` } as React.CSSProperties}
-      role="img"
-      aria-label={String(text ?? '')}
+      {...(Component === 'span' ? { role: 'img', 'aria-label': String(text ?? '') } : {})}
     >
       <svg className="stroke-text__svg" viewBox={viewBox} preserveAspectRatio="xMidYMid meet" aria-hidden="true">
         {fillMode === 'wipe' && box && (
@@ -267,7 +268,7 @@ export const StrokeText: React.FC<StrokeTextProps> = ({
           ))}
         </text>
       </svg>
-    </span>
+    </Component>
   );
 };
 
