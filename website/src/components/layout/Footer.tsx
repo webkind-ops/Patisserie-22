@@ -21,7 +21,7 @@ export const Footer: React.FC<FooterProps> = ({ className }) => {
       )}
     >
       <div className="max-w-5xl mx-auto px-4 py-10 sm:px-6">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
           
           {/* Brand & Store Timings */}
           <div className="flex flex-col gap-4">
@@ -49,19 +49,6 @@ export const Footer: React.FC<FooterProps> = ({ className }) => {
               <p className="font-sans text-xs text-charcoal-muted tracking-tight">
                 {store.daysOpen}
               </p>
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div className="flex flex-col gap-3">
-            <h3 className="font-serif text-xl font-normal text-charcoal mb-1">Explore</h3>
-            <div className="flex flex-col gap-2 font-sans text-sm text-charcoal-muted">
-              <Link to="/" className="hover:text-lavender-700 transition-colors w-fit">Home</Link>
-              <Link to="/menu" className="hover:text-lavender-700 transition-colors w-fit">Menu</Link>
-              <Link to="/gifting" className="hover:text-lavender-700 transition-colors w-fit">Gifting</Link>
-              <Link to="/festive-occasions" className="hover:text-lavender-700 transition-colors w-fit">Festive Occasions</Link>
-              <Link to="/#story" className="hover:text-lavender-700 transition-colors w-fit">Our Story</Link>
-              <Link to="#contact" className="hover:text-lavender-700 transition-colors w-fit">Contact</Link>
             </div>
           </div>
 
