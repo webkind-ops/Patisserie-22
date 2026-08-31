@@ -22,7 +22,7 @@ function getLocalNetworkIp() {
 }
 
 const networkIp = getLocalNetworkIp();
-const targetUrl = process.env.VITE_MENU_URL || 'https://patisserie-22.vercel.app/menu';
+const targetUrl = process.env.VITE_MENU_URL || 'https://patisserie22.in/menu';
 const outputDir = path.resolve(__dirname, '../public/qr');
 const outputPath = path.join(outputDir, 'menu-qr.png');
 

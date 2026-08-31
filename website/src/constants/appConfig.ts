@@ -11,7 +11,7 @@ export const appConfig: AppConfig = {
     window.location.hostname !== 'localhost' &&
     window.location.hostname !== '127.0.0.1'
       ? window.location.origin
-      : 'https://patisserie-22.vercel.app',
+      : 'https://patisserie22.in',
   menuPath: '/menu',
 
   // Computed full QR target URL (points to local network IP or live domain)
@@ -24,7 +24,7 @@ export const appConfig: AppConfig = {
         return `${window.location.origin}${this.menuPath}`;
       }
     }
-    return `https://patisserie-22.vercel.app${this.menuPath}`;
+    return `https://patisserie22.in${this.menuPath}`;
   },
 
   // Currency configuration
