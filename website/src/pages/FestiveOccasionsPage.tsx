@@ -51,6 +51,7 @@ export const FestiveOccasionsPage: React.FC = () => {
                   <img
                     src={occasion.image}
                     alt={occasion.title}
+                    loading="lazy"
                     className="w-full h-full object-cover object-center"
                   />
                 ) : (

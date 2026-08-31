@@ -5,26 +5,13 @@ import { AppConfig } from '@/types/common';
  * Modifying this file updates QR code generation targets, store information, and metadata.
  */
 export const appConfig: AppConfig = {
-  // Base domain configuration - automatically uses network IP / current origin if available
-  baseUrl:
-    typeof window !== 'undefined' &&
-    window.location.hostname !== 'localhost' &&
-    window.location.hostname !== '127.0.0.1'
-      ? window.location.origin
-      : 'https://patisserie22.in',
+  // Base domain configuration
+  baseUrl: 'https://patisserie22.in',
   menuPath: '/menu',
 
-  // Computed full QR target URL (points to local network IP or live domain)
+  // Computed full QR target URL
   get qrMenuUrl(): string {
-    if (typeof window !== 'undefined' && window.location.origin) {
-      if (
-        window.location.hostname !== 'localhost' &&
-        window.location.hostname !== '127.0.0.1'
-      ) {
-        return `${window.location.origin}${this.menuPath}`;
-      }
-    }
-    return `https://patisserie22.in${this.menuPath}`;
+    return `${this.baseUrl}${this.menuPath}`;
   },
 
   // Currency configuration

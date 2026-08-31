@@ -78,6 +78,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           <ImageWithFallback
             src={item.image}
             alt={item.name}
+            loading="lazy"
             containerClassName="w-full h-full absolute inset-0"
             className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
           />

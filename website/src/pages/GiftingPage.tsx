@@ -34,7 +34,7 @@ export const GiftingPage: React.FC = () => {
           ].map((h) => (
             <div key={h.id} className="bg-white rounded-2xl overflow-hidden shadow-soft-sm border border-lavender-50 flex flex-col">
               <div className="w-full aspect-square overflow-hidden">
-                <img src={h.img} alt={h.title} className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105" />
+                <img src={h.img} alt={h.title} loading="lazy" className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105" />
               </div>
               <div className="p-4 flex flex-col items-center text-center flex-1">
                 <h3 className="font-serif text-xl text-charcoal mb-1">{h.title}</h3>
