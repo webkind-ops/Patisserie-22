@@ -54,7 +54,7 @@ export const SplashLoader: React.FC<SplashLoaderProps> = ({
           exit={{ opacity: 0 }}
           transition={{ duration: 1.2, ease: [0.33, 1, 0.68, 1] }}
           onClick={handleSkip}
-          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black cursor-pointer select-none px-6"
+          className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black cursor-pointer select-none px-6"
         >
           <motion.div
             initial={{ opacity: 0, y: 16, scale: 0.97 }}

@@ -13,7 +13,6 @@ const NAV_LINKS = [
   { name: 'Home', path: '/' },
   { name: 'Menu', path: '/menu' },
   { name: 'Gifting', path: '/gifting' },
-  { name: 'Festive', path: '/festive-occasions' },
 ];
 
 export const Header: React.FC<HeaderProps> = ({ children, className }) => {

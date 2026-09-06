@@ -9,6 +9,8 @@ import DepthCarousel from '@/components/ui/DepthCarousel';
 import { ImageGallery } from '@/components/ui/carousel-circular-image-gallery';
 import { useCart } from '@/context/CartContext';
 import { useSEO } from '@/hooks/useSEO';
+import TextLoop from '@/components/ui/TextLoop';
+import { ScrollExpand } from '@/components/ui/ScrollExpand';
 
 export const HomePage: React.FC = () => {
   useSEO({
@@ -32,6 +34,8 @@ export const HomePage: React.FC = () => {
     navigate('/menu');
   };
 
+  const TEST_SCROLL_EXPAND = false; // Set to false to revert back to DepthCarousel
+
   return (
     <Layout>
       {/* AMBIANCE PHOTOS PLACEHOLDER */}
@@ -49,27 +53,49 @@ export const HomePage: React.FC = () => {
           />
           <p className="text-charcoal-muted mt-2 text-sm">Experience the ambience</p>
         </div>
-        <div className="w-full max-w-4xl mx-auto h-[400px] md:h-[500px] relative overflow-hidden rounded-[2rem] bg-lavender-50/50">
-          <DepthCarousel
-            items={[
-              { image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80', alt: 'Ambiance 1' },
-              { image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80', alt: 'Ambiance 2' },
-              { image: 'https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&w=800&q=80', alt: 'Ambiance 3' },
-              { image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80', alt: 'Ambiance 4' }
-            ]}
-            depth={220}
-            spread={90}
-            tilt={22}
-            tiltDirection="right"
-            perspective={1400}
-            visibleCards={4}
-            falloff={0.2}
-            blur={6}
-            autoplay
-            loop
-            tint="rgba(167, 139, 250, 0.15)" /* Lavender tint for depth */
-          />
-        </div>
+        
+        {TEST_SCROLL_EXPAND ? (
+          <div className="w-full relative">
+            <ScrollExpand
+              src="/images/bakery/image1.jpg"
+              title="Step Inside"
+              scrollHint="Scroll down"
+              useWindowScroll={true}
+              mediaZoom={1.4}
+              startWidth={40}
+              startHeight={50}
+            >
+              <h2 className="text-4xl md:text-5xl font-serif text-white mb-4">A World of Baking</h2>
+              <p className="text-white/90 text-sm md:text-base max-w-md mx-auto">
+                Every detail in our bakery is designed to bring you joy, from the aroma of fresh bakes to our elegant interiors.
+              </p>
+            </ScrollExpand>
+          </div>
+        ) : (
+          <div className="w-full max-w-4xl mx-auto h-[400px] md:h-[500px] relative overflow-hidden rounded-[2rem] bg-lavender-50/50">
+            <DepthCarousel
+              items={[
+                { image: '/images/bakery/image1.jpg', alt: 'Bakery Ambiance 1' },
+                { image: '/images/bakery/image2.jpg', alt: 'Bakery Ambiance 2' },
+                { image: '/images/bakery/image3.jpg', alt: 'Bakery Ambiance 3' },
+                { image: '/images/bakery/image4.jpg', alt: 'Bakery Ambiance 4' },
+                { image: '/images/bakery/image5.jpg', alt: 'Bakery Ambiance 5' },
+                { image: '/images/bakery/image6.jpg', alt: 'Bakery Ambiance 6' }
+              ]}
+              depth={220}
+              spread={90}
+              tilt={22}
+              tiltDirection="right"
+              perspective={1400}
+              visibleCards={4}
+              falloff={0.2}
+              blur={6}
+              autoplay
+              loop
+              tint="rgba(167, 139, 250, 0.15)"
+            />
+          </div>
+        )}
       </section>
 
       {/* BEST SELLERS SECTION */}

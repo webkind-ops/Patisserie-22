@@ -9,7 +9,7 @@ import {
   calculateItemUnitPrice,
 } from '@/utils/cartHelpers';
 import { ImageWithFallback } from '@/components/ui/ImageWithFallback';
-import { Plus, Minus } from 'lucide-react';
+import { Plus, Minus, X } from 'lucide-react';
 import { StatefulButton } from '@/components/ui/stateful-button';
 
 import { cn } from '@/utils/cn';
@@ -34,6 +34,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     : (isCake ? CAKE_WEIGHT_OPTIONS[0].label : '');
     
   const [selectedVariant, setSelectedVariant] = useState<string>(defaultSelection);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   const { addToCart, updateQuantity, items } = useCart();
 
@@ -74,14 +75,22 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     >
       <div>
         {/* Media Container */}
-        <div className="relative w-full aspect-[4/3] bg-lavender-50/80 overflow-hidden">
+        <div 
+          className="relative w-full aspect-[4/3] bg-lavender-50/80 overflow-hidden cursor-pointer group/img"
+          onClick={() => setIsLightboxOpen(true)}
+        >
           <ImageWithFallback
             src={item.image}
             alt={item.name}
             loading="lazy"
             containerClassName="w-full h-full absolute inset-0"
-            className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-full object-cover object-center transition-transform duration-500 group-hover/img:scale-105"
           />
+          <div className="absolute inset-0 bg-black/0 group-hover/img:bg-black/10 transition-colors flex items-center justify-center pointer-events-none">
+            <span className="opacity-0 group-hover/img:opacity-100 text-white font-semibold text-sm tracking-wider bg-black/40 px-3 py-1.5 rounded-full backdrop-blur-sm transition-opacity">
+              View Full
+            </span>
+          </div>
 
           {/* Badges Over Image */}
           <div className="absolute top-2.5 left-2.5 right-2.5 flex items-center justify-between gap-1 pointer-events-none">
@@ -211,6 +220,107 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </div>
         )}
       </div>
+
+      {/* Expanded Card Modal (Lightbox) */}
+      {isLightboxOpen && (
+        <div 
+          className="fixed inset-0 z-[100] bg-white/40 backdrop-blur-md flex items-center justify-center p-4 md:p-8 animate-in fade-in duration-300"
+          onClick={(e) => { e.stopPropagation(); setIsLightboxOpen(false); }}
+        >
+          <button 
+            className="absolute top-6 right-6 text-charcoal-muted hover:text-charcoal bg-white hover:bg-lavender-50 rounded-full p-2 transition-all shadow-md z-10"
+            onClick={(e) => { e.stopPropagation(); setIsLightboxOpen(false); }}
+            aria-label="Close modal"
+          >
+            <X size={28} />
+          </button>
+          
+          <div 
+            className="bg-white rounded-[2rem] p-6 md:p-8 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] border border-lavender-100 animate-in zoom-in-95 duration-300 max-w-4xl w-full max-h-[95vh] overflow-y-auto flex flex-col md:flex-row gap-8 items-center text-left relative"
+            onClick={(e) => e.stopPropagation()} 
+          >
+            <div className="w-full md:w-1/2 aspect-square rounded-3xl overflow-hidden shrink-0 bg-lavender-50 relative">
+              <ImageWithFallback
+                src={item.image} 
+                alt={item.name} 
+                className="w-full h-full object-cover"
+                containerClassName="absolute inset-0"
+              />
+            </div>
+            <div className="flex flex-col w-full md:w-1/2 justify-center py-4">
+              <span className="text-xs font-bold tracking-wider uppercase text-lavender-500 mb-3">{item.category.replace('-', ' ')}</span>
+              <h3 className="font-serif text-3xl md:text-4xl text-charcoal mb-4 leading-tight">{item.name}</h3>
+              <span className="font-sans font-bold text-2xl text-lavender-700 mb-6">{formatCurrency(currentUnitPrice)}</span>
+              <div className="w-12 h-1 bg-lavender-200 mb-6 rounded-full"></div>
+              <p className="text-base text-charcoal-muted mb-8 leading-relaxed">
+                {item.description}
+              </p>
+              
+              {/* Variant / Weight Selection in Lightbox */}
+              {(hasVariants || isCake) && (
+                <div className="mb-6 flex flex-col gap-2">
+                  <span className="font-sans text-xs font-medium text-charcoal-muted">
+                    Select Option / Size:
+                  </span>
+                  <div className="flex flex-wrap gap-2">
+                    {optionsToRender.map((opt) => (
+                      <button
+                        key={opt.label}
+                        type="button"
+                        onClick={() => setSelectedVariant(opt.label)}
+                        className={cn(
+                          'py-2 px-3 rounded-xl text-sm font-semibold text-center transition-all',
+                          selectedVariant === opt.label
+                            ? 'bg-lavender-deep text-white shadow-soft-sm'
+                            : 'bg-purple-50/70 text-charcoal hover:bg-purple-100 border border-purple-100'
+                        )}
+                      >
+                        {opt.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div className="flex flex-col sm:flex-row gap-4 mt-auto">
+                {item.availability === 'out_of_stock' ? (
+                  <span className="inline-flex items-center justify-center w-full px-8 py-4 rounded-xl text-charcoal-muted bg-surface-muted border border-surface-border font-bold">
+                    Sold Out
+                  </span>
+                ) : inCartQty === 0 ? (
+                  <button
+                    onClick={handleAdd}
+                    className="inline-flex items-center justify-center w-full px-8 py-4 rounded-xl bg-lavender-700 text-white text-sm font-bold hover:bg-lavender-800 transition-colors shadow-soft-sm"
+                  >
+                    Add to Cart
+                  </button>
+                ) : (
+                  <div className="flex items-center justify-between gap-4 bg-lavender-50 border border-lavender-100 p-2 rounded-xl shadow-soft-sm w-full">
+                    <button
+                      onClick={handleDecrement}
+                      className="w-10 h-10 rounded-lg bg-white text-lavender-900 hover:bg-lavender-200 active:scale-95 flex items-center justify-center transition-all shadow-sm"
+                      aria-label="Decrease quantity"
+                    >
+                      <Minus className="w-5 h-5" />
+                    </button>
+                    <div className="flex flex-col items-center">
+                      <span className="font-sans text-xs text-lavender-600 font-semibold">In Cart</span>
+                      <span className="font-sans text-lg font-bold text-lavender-900 leading-none">{inCartQty}</span>
+                    </div>
+                    <button
+                      onClick={handleIncrement}
+                      className="w-10 h-10 rounded-lg bg-white text-lavender-900 hover:bg-lavender-200 active:scale-95 flex items-center justify-center transition-all shadow-sm"
+                      aria-label="Increase quantity"
+                    >
+                      <Plus className="w-5 h-5" />
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
