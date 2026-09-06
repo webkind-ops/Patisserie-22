@@ -9,7 +9,6 @@ import DepthCarousel from '@/components/ui/DepthCarousel';
 import { ImageGallery } from '@/components/ui/carousel-circular-image-gallery';
 import { useCart } from '@/context/CartContext';
 import { useSEO } from '@/hooks/useSEO';
-import TextLoop from '@/components/ui/TextLoop';
 import { ScrollExpand } from '@/components/ui/ScrollExpand';
 
 export const HomePage: React.FC = () => {
