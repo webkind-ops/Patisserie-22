@@ -16,7 +16,7 @@ export const useSEO = ({ title, description, canonicalUrl, image }: SEOProps = {
 
     const defaultDescription = `Welcome to ${appConfig.store.storeName}. ${appConfig.store.tagline}. Order fresh cakes, pastries, and artisanal breads.`;
     const finalDescription = description || defaultDescription;
-    const finalImage = image || `${appConfig.baseUrl}/images/patisserie-22-logo.jpg`;
+    const finalImage = image || `${appConfig.baseUrl}/images/bakery/image1.jpg`;
 
     // Using pathname for canonical building
     const currentPath = window.location.pathname;
@@ -68,7 +68,7 @@ export const useSEO = ({ title, description, canonicalUrl, image }: SEOProps = {
         "@context": "https://schema.org",
         "@type": "Bakery",
         "name": appConfig.store.storeName,
-        "image": `${appConfig.baseUrl}/images/patisserie-22-logo.jpg`,
+        "image": `${appConfig.baseUrl}/images/bakery/image1.jpg`,
         "@id": appConfig.baseUrl,
         "url": appConfig.baseUrl,
         "telephone": appConfig.store.phone,
